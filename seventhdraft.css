@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: 'Kajiro Bold';
+    src: url('./Kajiro\ Bold.woff2') format('woff2'),
+         url('./Kajiro\ Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+#main{
+    
+    width: 100%;
+    height: 100vh;
+    
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#workingarea{
+    position: relative;
+    margin:0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width:1920px;
+    
+    
+}
+
+#nav{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img{
+    height: 60px;
+
+}
+#navleft, #navright {
+    align-items: center;
+    display: flex;
+    gap: 70px;
+}
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+#herosection{
+    position: absolute;
+    display: flex;
+    transform: translate(0%,-40%);
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+#heroleft{
+    min-width:50%;
+    }
+#heroleft .elem{
+    position: relative;
+    
+    height: 9vw;
+    overflow: hidden;
+    
+}
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left:0;
+    line-height: .9;
+    font-family: "kajiro Bold";
+    
+    color: rgb(255, 255, 255);
+    font-size: 12vw; 
+    font-weight: 100;
+}
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro Bold";
+    font-size: 4vw;
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color:white;
+    width:18%;
+   
+    
+}
+
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 180px;
+    background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/11/nezuko-demons-slayer.jpg?q=70&fit=crop&w=1140&h=&dpr=1);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
